@@ -7,6 +7,10 @@ import RightPanel from './components/layout/RightPanel';
 import ChatList from './components/chat/ChatList';
 import ChatWindow from './components/chat/ChatWindow';
 import AIAssistantPanel from './components/ai/AIAssistantPanel';
+import AIWorkflowHub from './components/ai/AIWorkflowHub';
+import AIAvatarCallView from './components/call/AIAvatarCallView';
+import AIMeetingAssistant from './components/call/AIMeetingAssistant';
+import VoiceCloningLab from './components/ai/VoiceCloningLab';
 import CommunityView from './components/community/CommunityView';
 import ChannelsView from './components/community/ChannelsView';
 import StatusStories from './components/status/StatusStories';
@@ -44,6 +48,10 @@ function AppContent() {
           )}
 
           {activeTab === 'ai_suite' && <AIAssistantPanel />}
+          {activeTab === 'ai_workflows' && <AIWorkflowHub />}
+          {activeTab === 'ai_avatar_calls' && <AIAvatarCallView />}
+          {activeTab === 'meeting_assistant' && <AIMeetingAssistant />}
+          {activeTab === 'voice_lab' && <VoiceCloningLab />}
           {activeTab === 'communities' && <CommunityView />}
           {activeTab === 'channels' && <ChannelsView />}
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   MessageSquare, Users, Radio, PhoneCall, CircleDot, 
   Bot, ShoppingBag, ShieldCheck, LayoutDashboard, Settings,
-  Sparkles, KeyRound
+  Sparkles, Cpu, Video, FileText, Mic
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 
@@ -12,6 +12,10 @@ export default function Sidebar() {
   const navItems = [
     { id: 'chats', label: 'Chats', icon: MessageSquare, badge: 7 },
     { id: 'ai_suite', label: 'SphereAI Suite', icon: Bot, badge: 'AI', isGlow: true },
+    { id: 'ai_workflows', label: 'AI Workflows', icon: Cpu, badge: 'Agent' },
+    { id: 'ai_avatar_calls', label: 'AI Avatar Video', icon: Video, badge: '3D' },
+    { id: 'meeting_assistant', label: 'Meeting Notes', icon: FileText },
+    { id: 'voice_lab', label: 'Voice Clone Lab', icon: Mic },
     { id: 'communities', label: 'Communities', icon: Users, badge: 2 },
     { id: 'channels', label: 'Channels', icon: Radio },
     { id: 'calls', label: 'Calls', icon: PhoneCall },
